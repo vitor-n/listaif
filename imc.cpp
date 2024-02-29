@@ -3,17 +3,15 @@
 using std::cout;
 using std::endl;
 
-float getIMC(float fMass, float fHeight)
-{
+float getIMC(float fMass, float fHeight) {
     return fMass / (fHeight * fHeight);
 }
 
-int main()
-{
+int main() {
     float fMass, fHeight, fIMC;
 
-    fMass = 70;
-    fHeight = 1.75;
+    fMass = 60;
+    fHeight = 1.70;
 
     fIMC = getIMC(fMass, fHeight);
 
