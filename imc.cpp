@@ -3,11 +3,14 @@
 using std::cout;
 using std::endl;
 
+//returns the IMC given the mass and height of a person
 float getIMC(float fMass, float fHeight) {
+
     return fMass / (fHeight * fHeight);
 }
 
 int main() {
+
     float fMass, fHeight, fIMC;
 
     fMass = 60;
