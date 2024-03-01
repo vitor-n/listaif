@@ -1,6 +1,7 @@
 #include <iostream>
 
 using std::cout;
+using std::cin;
 using std::endl;
 
 //returns the IMC given the mass and height of a person
@@ -13,8 +14,10 @@ int main() {
 
     float fMass, fHeight, fIMC;
 
-    fMass = 60;
-    fHeight = 1.70;
+    cout << "Digite a massa (kg): ";
+    cin >> fMass;
+    cout << "Digite a altura (m): ";
+    cin >> fHeight;
 
     fIMC = getIMC(fMass, fHeight);
 

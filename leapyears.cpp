@@ -1,8 +1,8 @@
 #include <iostream>
 
 using std::cout;
+using std::cin;
 using std::endl;
-
 
 //checks if a given year is a leap year
 bool isLeapYear(int iYear) {
@@ -13,7 +13,9 @@ bool isLeapYear(int iYear) {
 int main() {  
 
     int iYear;
-    iYear = 2024;
+
+    cout << "Digite o ano: ";
+    cin >> iYear;
 
     if (isLeapYear(iYear)) {
         cout << "Ano bissexto" << endl;
